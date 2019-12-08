@@ -448,6 +448,23 @@ julia> A'
 kw"'"
 
 """
+    \$
+
+The string interpolation operator, see [string](@ref string-interpolation)
+and [expression](@ref man-expression-interpolation).
+
+# Examples
+```jldoctest
+julia> name = "Joe"
+"Joe"
+
+julia> "My name is \$name."
+"My name is Joe."
+```
+"""
+kw"\$"
+
+"""
     const
 
 `const` is used to declare global variables whose values will not change. In almost all code
